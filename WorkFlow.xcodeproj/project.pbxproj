@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AEDEF70D25F36DC146B7C54 /* Pods_WorkFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9812A3BAF848769050892C /* Pods_WorkFlow.framework */; };
 		62474F9E2493201A003D7590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62474F9D2493201A003D7590 /* AppDelegate.swift */; };
 		62474FA02493201A003D7590 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62474F9F2493201A003D7590 /* SceneDelegate.swift */; };
 		62474FA42493201C003D7590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62474FA32493201C003D7590 /* Assets.xcassets */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2924346087259A383C8D073F /* Pods-WorkFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkFlow.release.xcconfig"; path = "Target Support Files/Pods-WorkFlow/Pods-WorkFlow.release.xcconfig"; sourceTree = "<group>"; };
+		5EB1C0F8715C933B66EDD1F9 /* Pods-WorkFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkFlow.debug.xcconfig"; path = "Target Support Files/Pods-WorkFlow/Pods-WorkFlow.debug.xcconfig"; sourceTree = "<group>"; };
 		62474F9A2493201A003D7590 /* WorkFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62474F9D2493201A003D7590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62474F9F2493201A003D7590 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		62474FBA24932EC4003D7590 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		62474FBD2493650D003D7590 /* DetailTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTaskViewController.swift; sourceTree = "<group>"; };
 		62474FBE2493650D003D7590 /* DetailTaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTaskViewController.xib; sourceTree = "<group>"; };
+		7A9812A3BAF848769050892C /* Pods_WorkFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AEDEF70D25F36DC146B7C54 /* Pods_WorkFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		194B97BF91E5261E6AE7D8C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A9812A3BAF848769050892C /* Pods_WorkFlow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		62474F912493201A003D7590 = {
 			isa = PBXGroup;
 			children = (
 				62474F9C2493201A003D7590 /* WorkFlow */,
 				62474F9B2493201A003D7590 /* Products */,
+				753C49EAAAA8A0F9788224C4 /* Pods */,
+				194B97BF91E5261E6AE7D8C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +105,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		753C49EAAAA8A0F9788224C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EB1C0F8715C933B66EDD1F9 /* Pods-WorkFlow.debug.xcconfig */,
+				2924346087259A383C8D073F /* Pods-WorkFlow.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,6 +122,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62474FAE2493201C003D7590 /* Build configuration list for PBXNativeTarget "WorkFlow" */;
 			buildPhases = (
+				2E72E244E0626D998947F1AD /* [CP] Check Pods Manifest.lock */,
 				62474F962493201A003D7590 /* Sources */,
 				62474F972493201A003D7590 /* Frameworks */,
 				62474F982493201A003D7590 /* Resources */,
@@ -158,6 +184,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E72E244E0626D998947F1AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WorkFlow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		62474F962493201A003D7590 /* Sources */ = {
@@ -302,6 +353,7 @@
 		};
 		62474FAF2493201C003D7590 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EB1C0F8715C933B66EDD1F9 /* Pods-WorkFlow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,6 +375,7 @@
 		};
 		62474FB02493201C003D7590 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2924346087259A383C8D073F /* Pods-WorkFlow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
